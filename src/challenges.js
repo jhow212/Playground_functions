@@ -25,12 +25,20 @@ function concatName(array) {
   let nomes = array[array.length - 1].concat(", " + array[0]);
   return nomes;
 }  
-console.log(concatName(array))
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let vitoria = wins;
+  let empate = ties;
+
+  if (wins) {
+    vitoria = vitoria * 3
+  } else {
+    empate = empate * 1
+  }
+  return vitoria + empate;
 }
+
 
 // Desafio 6
 function highestCount() {
