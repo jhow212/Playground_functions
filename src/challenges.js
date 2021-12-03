@@ -20,11 +20,10 @@ function splitSentence(string) {
 }
 
 // Desafio 4
-let array =['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 function concatName(array) {
   let nomes = array[array.length - 1].concat(", " + array[0]);
   return nomes;
-}  
+}
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -41,17 +40,31 @@ function footballPoints(wins, ties) {
 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+let array = [-2, -2, -1];
+function highestCount(array) {
+  let resultado = 0;
+  let maiorNumero = -1;
+  for (let index = 0; index < array.length; index += 1) {
+    resultado = array[index];
 
+    if (resultado > maiorNumero) {
+      maiorNumero = resultado;
+    }
+  }
+  let repeticoes = array.filter((numero) =>
+    numero === maiorNumero
+  ).length;
+  return repeticoes
+}
+console.log(highestCount(array))
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+
 }
 
+
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(array) {
   // seu código aqui
 }
 
